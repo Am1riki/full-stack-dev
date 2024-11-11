@@ -1,0 +1,20 @@
+---
+import MyHeader from "../../components/MyHeader.astro"
+import NewMap from "../../components/NewMap.astro"
+import MyForm from "../../components/MyForm.astro"
+
+const location = 'Kazakhstan, Astana'
+const telega = '@KirigaiaKazuto'
+const mail  = 'amirbek.mukushef@gmail.com'
+---
+<meta charset="UTF-8">
+
+<MyHeader/>
+<div class="flex mt-10">
+    <div class="w-1/2">
+    <NewMap/>
+    </div>
+    <div class="w-1/2 mt-10">
+    <MyForm/>
+    </div>
+</div>

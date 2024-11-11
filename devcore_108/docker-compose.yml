@@ -1,0 +1,15 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./server  # путь к FastAPI проекту
+    container_name: backend
+    expose:
+      - "4322:4322"  # только для внутренней сети Docker
+
+  frontend:
+    build:
+      context: ./client  # путь к Astro проекту
+    container_name: frontend
+    expose:
+      - "80:80"  # только для внутренней сети Docker

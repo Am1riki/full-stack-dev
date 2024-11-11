@@ -1,0 +1,18 @@
+---
+import MyHeader from '../../components/MyHeader.astro'
+import CarouselFlowByte from "../../components/CarouselFlowByte.astro"
+
+const images = [
+  {src: "/1.png", alt: "Описание изображения 1"},
+  {src: "/2.png",alt: "Описание изображения 2",},
+  {src: "/10.jpeg",alt: "Описание изображения 3"},
+];
+---
+<meta charset="UTF-8">
+<div>
+    <MyHeader/>
+    <body>
+    <script src="../../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <CarouselFlowByte images={images}>
+    </body>
+</div>  

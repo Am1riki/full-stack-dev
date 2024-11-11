@@ -1,0 +1,30 @@
+---
+    import MyHeader from '../../components/MyHeader.astro'
+    const aboutMe = "<С детства увлекаюсь сферой IT. Люблю кодить и получаю удовольствие когда создаю что-то интересное. Всегда открыт всему новому и быстро обучаюсь. Я привык действовать независимо и без вмешательства, хотя мне нравится работать в команде. Так же творчески подхожу к решению проблем. >";
+    const education1 = "2018-2022 гг. Бакалавриат \n Евразийский национальный университет имени Л. Н. Гумилёва, Астана \n Вычислительная техника и программное обеспечение";
+    const education2 = "2022 г. Сентябрь-декабрь (неоконченное) MBA Евразийский национальный университет имени Л. Н. Гумилёва, Астана «Менеджмент инноваций и цифровой трансформации экономики»";
+    const education3 = "2023-2025 гг. Магистратура Евразийский национальный университет имени Л. Н. Гумилёва, Астана Системы информационной безопасности";
+
+--- 
+<meta charset="UTF-8">
+<div>
+    <MyHeader/>
+    <h1 style="font-family: Inter, sans-serif; font-weight: 700; margin-top: 5vh; margin-left: 10vh; font-size: 5vh">
+        ОБО МНЕ
+    </h1>
+    <h2 style="font-family: Inter, sans-serif; font-weight: 400; margin-top: 1vh; margin-left: 10vh; font-size: 3vh">
+        {aboutMe}
+    </h2>
+    <h1 style="font-family: Inter, sans-serif; font-weight: 700; margin-top: 5vh; margin-left: 10vh; font-size: 5vh">
+        ОБРАЗОВАНИЕ
+    </h1>
+    <h2 style="font-family: Inter, sans-serif; font-weight: 400; margin-top: 1vh; margin-left: 10vh; font-size: 2vh">
+        {education1}
+    </h2>
+    <h2 style="font-family: Inter, sans-serif; font-weight: 400; margin-top: 1vh; margin-left: 10vh; font-size: 2vh">
+        {education2}
+    </h2>
+    <h2 style="font-family: Inter, sans-serif; font-weight: 400; margin-top: 1vh; margin-left: 10vh; font-size: 2vh">
+        {education3}
+    </h2>
+</div>

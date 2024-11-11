@@ -1,0 +1,118 @@
+---
+import MyHeader from '../../components/MyHeader.astro'
+const web = ['HTML', 'CSS', 'Bootstrap', 'MUI', 'JavaScript', 'ReactJS', 'Axios', 'Redux', 'TypeScript', 'NodeJS', 'ExpressJS']
+const python = ['FastAPI', 'PyDantic', 'Alembic', 'SQLAlchemy', 'Numpy', 'Pandas', 'Matplotlib', 'Seaborn', 'Keras', 'Aiogram', 'Telegram-bot-api','OpenPyXL', 'OpenDocx', 'Streamlit']
+const csharp = ['.NET', 'Windows Forms']
+const database = ['SQL', 'MySQL', 'PostgreSQL', 'MS SQL', 'SQLite', 'MongoDB']
+const WorkExpText = `
+<Фрилансер>
+<Сентябрь 2021 — сентябрь 2022 >
+Python - Создавал десктопные и клиент-серверные приложения для интернет магазинов. Так же создавал телеграм-боты для разных целей.
+C# - Windows Forms, ASP.NET - Создал множество десктопных приложении для ОС Windows с подключением к базе данных.
+Изучил для frontend HTML,CSS,JavaScript и сделал несколько проектов.
+Java - Работа с Java Servlets. Так же десктопные приложения с графическим пользовательским интерфейсом на JavaFx.
+C/C++ - знаю на начальном уровне. Изучал и писал консольные приложения для системного программирования.
+Базы данных - проектировал схемы БД. Подключал БД к телеграм ботам, сайтам и десктопным приложениям.Работал c СУБД MS SQL и MySQL,PostgreSQL.
+
+<Специалист технической поддержки 2 линий><Platonus>
+<Октябрь 2022 — Сентябрь 2024>
+Обязанности:
+Создание SQL запросов.
+Создание Jasper Report отчетов.
+Миграция данных.
+Поиск и написание багов.
+Настройка интеграции множества систем.
+Работа с клиентами.
+
+Результаты:
+Решение 70-80 заявок в месяц разной сложности.
+Написал множество отчётов разной сложности с использованием разных видов join-ов.
+Мигрировал данные нескольких ВУЗов из разных СУБД.
+Работал на OS Linux и OS Windows. Работал с командами терминала Linux.
+Консультация многих клиентов по техническим вопросам.
+
+<Frontend разработчик(Стажировка)><Platonus>
+<Июнь 2024 — Сентябрь 2024я>
+Обязанности:
+Работа с ReactJS.
+Работа с MUI.
+Фикс багов.
+Знакомство с корпоративной разработкой.
+Работа в команде.
+
+Результаты:
+Фикс множества багов разной сложности.
+Приобрел опыт создания React приложении для больших платформ.
+Улучшил навыки верстки.
+Получил опыт использования MUI для проектов.
+Изучил работу с GIT. 
+
+
+<BI аналитик><Korkem Telecom>
+<Сентябрь 2024 - по настоящее время>
+Обязанности:
+Создание отчетности по данным.
+Визуализация данных.
+Миграция данных.
+Разработка аналитических платформ.
+Работа с разными типами СУБД.
+Создание оптимизированных SQL запросов.
+Работа с ETL.
+
+Результаты:
+Написал оптимизированные SQL запросы для БД с большими данными.
+Написал скрипты на Python для обработки данных.
+Автоматизировал дашборды для Power BI.
+Участвовал в сопровождении Telegram ботов.
+`
+---
+<meta charset="UTF-8">
+
+
+<div>
+    <MyHeader/>
+<div class="flex">
+  <div class="w-1/5  p-4 bg-gray-300 mt-10 ml-10" style="background-color: rgba(217, 217, 217, 1);">
+    <h4 class="font-inter font-bold text-2xl mt-2 ml-8">НАВЫКИ</h4>
+    <ul>
+      <li class="mt-2">
+        <span class="font-semibold">WEB</span>
+        <ul class="ml-10">
+          {web.map((item, index) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </li>
+      <li class="mt-2 ml-5">
+        <span class="font-semibold">Python</span>
+        <ul class="ml-10">
+          {python.map((item, index) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </li>
+      <li class="mt-2">
+        <span class="font-semibold">C#</span>
+        <ul class="ml-10">
+          {csharp.map((item, index) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </li>
+      <li class="mt-2">
+        <span class="font-semibold">Database</span>
+        <ul class="ml-10">
+          {database.map((item, index) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="w-4/5 p-4 ml-10 mt-10">
+    <h4 class="font-inter font-bold text-2xl mt-2">ОПЫТ РАБОТЫ</h4>
+    <div class="mt-4" style="white-space: pre-wrap;">{WorkExpText}</div>
+  </div>
+</div>
+</div>

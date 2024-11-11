@@ -1,0 +1,4 @@
+devcore_108/client/dist/
+devcore_108/client/node_modules/
+devcore_108/server/__pycache__
+devcore_108/server/.venv

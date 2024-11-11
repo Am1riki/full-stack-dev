@@ -1,0 +1,45 @@
+---
+import MyHeader from '../../components/MyHeader.astro'
+
+const cards = [
+{
+    name: 'Diogenes',
+    scr: '/Снимок экрана 2024-07-20 в 23.12.51.png',
+    description: 'Телеграм бот для быстрого доступа к некоторым документам. Сделано на Python с использованием Aiogram для проектирования бота и Pydrive для доступа к файлам из Google Диск.'
+},
+{
+    name: 'Shabloner',
+    scr: '/Снимок экрана 2024-07-20 в 23.10.13.png',
+    description: 'Сайт-платформа для облегчения некоторых вещей на работе. Есть работа с документооборотом для работы, календарь дежурств и хранилище файлов, шаблонов и отчетов. Сделан с помощью JavaScript, Python и библиотекой Streamlit. Так же есть связь с базой данных MySQL, связь с которой работает через SQLAlchemy.'
+},
+{
+    name: 'ReFacer',
+    scr: '/2024-07-21 01.15.26.jpg',
+    description: 'Десктопное приложение для замены лиц на фото и видео. Работает на OpenCV и dlib. Пользовательский интерфейс сделан на Python Kivy. Это моя дипломная работа.'
+},
+{
+    name: 'RoadMapper',
+    scr: '/Снимок экрана 2024-07-21 в 01.31.50.png',
+    description: 'Пет проект сделанный полностью на JavaScript. Проект это платформа для цифровизации работы ВУЗа.  Пользовательская часть сделан на ReactJS, Бэкенд на NodeJS и ExpressJS. СУБД для базы данных PostgreSQL.  '
+}
+]
+--- 
+
+<meta charset="UTF-8">
+<div>
+    <MyHeader/>
+<div class="flex flex-wrap justify-center mt-20">
+    {cards.map((card) => (
+      <div class="max-w-xs rounded overflow-hidden shadow-lg m-4">
+        <img class="w-full h-64 object-cover" src={card.scr} alt={card.name} />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">{card.name}</div>
+          <p class="text-gray-700 text-base">
+            {card.description}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+  <h2>*В данной вкладке представлены только несколько моих проектов</h2>
+  </div>
