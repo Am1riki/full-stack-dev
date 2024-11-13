@@ -1,8 +1,7 @@
 FROM node:lts AS build
 WORKDIR /app
-COPY package*.json ./
 COPY . .
-RUN npm install
+RUN npm i
 RUN npm run build
 
 FROM nginx:alpine AS runtime

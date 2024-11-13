@@ -11,5 +11,6 @@ services:
     build:
       context: ./client  # путь к Astro проекту
     container_name: frontend
-    expose:
-      - "80:80"  # только для внутренней сети Docker
+    ports:
+      - "80:80"
+    
